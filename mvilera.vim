@@ -15,6 +15,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ericbn/vim-relativize'
 Plugin 'tpope/vim-fugitive'
+Plugin 'w0rp/ale'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -32,9 +33,16 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 " ######## END OF Vundle.Vim
 
+
 " ######## ColorScheme
 colorscheme twilight256
 " ######## END OF ColorScheme
+
+
+" ######## ALE
+let g:ale_completion_enabled = 1
+" ######## END OF ALE
+
 
 " ######## AirLine
 let g:airline#extensions#tabline#enabled = 1
@@ -44,9 +52,11 @@ set showtabline=2
 set noshowmode
 " ######## END OF AirLine
 
+
 " ######## VimNumbers
 " set number
 " ######## END OF VimNumbers
+
 
 " ####### NERDTree
 " autocmd vimenter * NERDTree
@@ -56,21 +66,25 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 " ####### END OF NERDTree
 
+
 " ####### NERDComments
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
 " ####### END OF NERDComments
 
+
 " ####### Leader Keybinds
 let mapleader = "\\"
 " ####### END OF Leader Keybinds 
+
 
 " ####### Keybinds
 map <C-k> :NERDTreeToggle<CR>
 map <C-j> <plug>NERDCommenterToggle 
 map <C-n> :bnext<CR>
 " ####### END OF Keybinds
+
 
 " ####### Misc
 set tabstop=4

@@ -17,3 +17,5 @@ set runtimepath^=~/.mvim runtimepath+=~/.mvim/after
 let &packpath = &runtimepath
 source ~/.mvim/mvilera.vim
 EOF
+
+echo "Installed successfully."
