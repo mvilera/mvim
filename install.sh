@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-if [ -f ~/.config/nvim/init.vim ]: then
+if [ -f ~/.config/nvim/init.vim ]; then
     echo "nvim init file already exists, aborting."
     exit 1
 fi
