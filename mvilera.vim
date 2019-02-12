@@ -1,3 +1,9 @@
+
+" ######## ALE
+let g:ale_completion_enabled = 1
+" ######## END OF ALE
+
+
 " ######## Vundle.Vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -38,11 +44,6 @@ filetype plugin indent on    " required
 " ######## ColorScheme
 colorscheme twilight256
 " ######## END OF ColorScheme
-
-
-" ######## ALE
-let g:ale_completion_enabled = 1
-" ######## END OF ALE
 
 
 " ######## AirLine
