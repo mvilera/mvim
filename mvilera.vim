@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ericbn/vim-relativize'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0rp/ale'
+Plugin 'gabrielelana/vim-markdown'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
