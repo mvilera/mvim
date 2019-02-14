@@ -1,3 +1,6 @@
+
+
+
 " ######## Vundle.Vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -10,6 +13,7 @@ call vundle#begin('~/.mvim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'cohama/lexima.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -38,11 +42,6 @@ filetype plugin indent on    " required
 " ######## ColorScheme
 colorscheme twilight256
 " ######## END OF ColorScheme
-
-
-" ######## ALE
-let g:ale_completion_enabled = 1
-" ######## END OF ALE
 
 
 " ######## AirLine
