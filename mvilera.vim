@@ -1,6 +1,5 @@
 
 
-
 " ######## Vundle.Vim
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -19,6 +18,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ericbn/vim-relativize'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'gabrielelana/vim-markdown'
 " All of your Plugins must be added before the following line
@@ -90,4 +90,9 @@ map <C-n> :bnext<CR>
 set tabstop=4
 set shiftwidth=4
 set expandtab
+let g:markdown_enable_spell_checking = 0
 " ####### END OF Misc
+
+
+" ####### Header templates
+au bufnewfile *.sh 0r ~/.mvim/headers/sh_header.template
