@@ -23,6 +23,7 @@ Plugin 'gabrielelana/vim-markdown'
 Plugin 'othree/yajs.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -39,7 +40,7 @@ filetype plugin indent on    " required
 
 " Put your non-Plugin stuff after this line
 " ######## END OF Vundle.Vim
-
+let g:deoplete#enable_at_startup = 1
 
 " ######## ColorScheme
 "" use a slightly darker background, like GitHub inline code blocks
