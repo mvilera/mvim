@@ -24,6 +24,8 @@ Plugin 'othree/yajs.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plugin '907th/vim-auto-save'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,6 +60,8 @@ let g:airline_theme='tomorrow'
 set showtabline=2
 set noshowmode
 
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
 
 " ######## VimNumbers
 " set number
@@ -86,9 +90,13 @@ let mapleader = "\\"
 
 
 " ####### Keybinds
-map <C-k> :NERDTreeToggle<CR>
+nnoremap <silent> <expr> <C-k> g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
+"map <C-k> :NERDTreeToggle<CR>
 map <C-j> <plug>NERDCommenterToggle 
 map <C-n> :bnext<CR>
+map <A-p> :FZF<CR>
+map <A-Left> <C-T>
+map <A-Right> <C-]>
 " ####### END OF Keybinds
 
 
